@@ -53,8 +53,8 @@
 				border: 1px solid rgba(127,255,255,0.75);
 			}
 				.element img{
-					width:100%
-					
+					width:100px;
+					height:100px;
 				}
 
 				.element .number {
@@ -166,7 +166,7 @@
 			},4500);
 
 			// 生成虚拟数据
-	        for(var i=0;i<199;i++){
+	        for(var i=0;i<99;i++){
 				personArray.push({
 		            image: "img/a.png"
 		        });
@@ -425,7 +425,7 @@
 
 					var object = new THREE.Object3D();
 
-					object.position.x = ( ( i % 5 ) * 800 ) - 800; // 400 图片的左右间距  800 x轴中心店
+					object.position.x = ( ( i % 5 ) * 400 ) - 800; // 400 图片的左右间距  800 x轴中心店
 					object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 300 ) + 500;  // 500 y轴中心店
 					object.position.z = ( Math.floor( i / 25 ) ) * 200 - 800;// 300调整 片间距 800z轴中心店
 
